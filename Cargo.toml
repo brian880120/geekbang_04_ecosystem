@@ -8,6 +8,7 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.86"
 axum = { version = "0.7.5", features = ["http2", "query", "tracing"] }
+derive_builder = "0.20.0"
 opentelemetry = "0.22.0"
 opentelemetry-otlp = { version = "0.15.0", features = ["tonic"] }
 opentelemetry_sdk = { version = "0.22.1", features = ["rt-tokio"] }
@@ -19,3 +20,6 @@ tracing = "0.1.40"
 tracing-appender = "0.2.3"
 tracing-opentelemetry = "0.23.0"
 tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+
+[dev-dependencies]
+derive_builder = "0.20.0"

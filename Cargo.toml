@@ -8,6 +8,9 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.86"
 axum = { version = "0.7.5", features = ["http2", "query", "tracing"] }
+blake3 = "1.5.3"
+bytes = "1.7.1"
+chrono = { version = "0.4.38", features = ["serde"] }
 derive_builder = "0.20.0"
 opentelemetry = "0.22.0"
 opentelemetry-otlp = { version = "0.15.0", features = ["tonic"] }

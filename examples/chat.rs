@@ -31,6 +31,7 @@ enum Message {
 async fn main() -> Result<()> {
     let layer = Layer::new().with_filter(LevelFilter::INFO);
     tracing_subscriber::registry().with(layer).init();
+    console_subscriber::init();
 
     let addr = "0.0.0.0:8080";
     let listener = TcpListener::bind(addr).await?;
